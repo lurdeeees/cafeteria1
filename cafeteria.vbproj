@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DD9AD71-0604-432D-867F-AD15C0DE0B61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>cafeteria.My.MyApplication</StartupObject>
+    <RootNamespace>cafeteria</RootNamespace>
+    <AssemblyName>cafeteria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>cafeteria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>cafeteria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscarCExpreso.Designer.vb">
+      <DependentUpon>BuscarCExpreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCExpreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCheesacake.Designer.vb">
+      <DependentUpon>BuscarCheesacake.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarCheesacake.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarFrappe.Designer.vb">
+      <DependentUpon>BuscarFrappe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarFrappe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarMoca.Designer.vb">
+      <DependentUpon>BuscarMoca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMoca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarMPrima.Designer.vb">
+      <DependentUpon>BuscarMPrima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarMPrima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPlimon.Designer.vb">
+      <DependentUpon>BuscarPlimon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPlimon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPManzana.Designer.vb">
+      <DependentUpon>BuscarPManzana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPManzana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CExpreso.Designer.vb">
+      <DependentUpon>CExpreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CExpreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheeseCake.Designer.vb">
+      <DependentUpon>CheeseCake.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CheeseCake.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexiones.vb" />
+    <Compile Include="CostosP.Designer.vb">
+      <DependentUpon>CostosP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CostosP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frappe.Designer.vb">
+      <DependentUpon>Frappe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frappe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrutaManzana.Designer.vb">
+      <DependentUpon>FrutaManzana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrutaManzana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.vb">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfazAdmin.Designer.vb">
+      <DependentUpon>InterfazAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InterfazAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu1.Designer.vb">
+      <DependentUpon>Menu1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuInicio.Designer.vb">
+      <DependentUpon>MenuInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Moca.Designer.vb">
+      <DependentUpon>Moca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Moca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosClientes.Designer.vb">
+      <DependentUpon>PedidosClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEmpleado.Designer.vb">
+      <DependentUpon>PEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MPrima.Designer.vb">
+      <DependentUpon>MPrima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MPrima.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPEmpleado.Designer.vb">
+      <DependentUpon>BuscarPEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PLimon.Designer.vb">
+      <DependentUpon>PLimon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PLimon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productoForm.Designer.vb">
+      <DependentUpon>productoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="productoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trabajador.Designer.vb">
+      <DependentUpon>Trabajador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trabajador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuscarCExpreso.resx">
+      <DependentUpon>BuscarCExpreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarCheesacake.resx">
+      <DependentUpon>BuscarCheesacake.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarFrappe.resx">
+      <DependentUpon>BuscarFrappe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMoca.resx">
+      <DependentUpon>BuscarMoca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarMPrima.resx">
+      <DependentUpon>BuscarMPrima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPlimon.resx">
+      <DependentUpon>BuscarPlimon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPManzana.resx">
+      <DependentUpon>BuscarPManzana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CExpreso.resx">
+      <DependentUpon>CExpreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheeseCake.resx">
+      <DependentUpon>CheeseCake.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostosP.resx">
+      <DependentUpon>CostosP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frappe.resx">
+      <DependentUpon>Frappe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrutaManzana.resx">
+      <DependentUpon>FrutaManzana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfazAdmin.resx">
+      <DependentUpon>InterfazAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu1.resx">
+      <DependentUpon>Menu1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuInicio.resx">
+      <DependentUpon>MenuInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moca.resx">
+      <DependentUpon>Moca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosClientes.resx">
+      <DependentUpon>PedidosClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEmpleado.resx">
+      <DependentUpon>PEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPrima.resx">
+      <DependentUpon>MPrima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPEmpleado.resx">
+      <DependentUpon>BuscarPEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLimon.resx">
+      <DependentUpon>PLimon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productoForm.resx">
+      <DependentUpon>productoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trabajador.resx">
+      <DependentUpon>Trabajador.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cafeteria-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registrarse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gatas bajo la lluvia logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expresp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\café gata bajo la lluvia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Café tres gata bajo la lluvia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Café dos gata bajo la lluvia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cheescake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie de limon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie de manzana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedido-en-linea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeteria %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro-vacio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeteria.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
